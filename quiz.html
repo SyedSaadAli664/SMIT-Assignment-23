@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="startquiz()">
+    <div class="main" >
+    <div class="main_container">
+        <!-- Header -->
+        <div class="main_head">
+            <div>
+                <span>Name : </span>
+                <span id="fulName"></span>
+                <br />
+                <span>Email : </span>
+                <span id="FulEmail">shahpervez9@gmail.com</span>
+            </div>
+            <div>
+                <span>Time : </span>
+                <span>00:00</span>
+            </div>
+
+
+        </div>
+        <!-- <hr /> -->
+        <!-- Body -->
+        <div class="main_body">
+            <div id="Questions">
+
+            </div>
+            <div >
+                <ol id="option">
+                    
+
+
+                </ol>
+
+            </div>
+
+        </div>
+        <!-- <hr /> -->
+        <!-- Footer -->
+        <div class="main_Footer">
+            <div>
+                <span  id="nowCount">1</span> / <span id="totalCount">7</span>
+            </div>
+            <button onclick="Nxt()" class="button nxtbtn" >Next</button>
+
+        </div>
+
+    </div>
+</div>
+    
+</body>
+<script src="quiz.js"></script>
+</html>
