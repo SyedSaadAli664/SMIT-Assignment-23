@@ -4,55 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>CSS Quiz</title>
 </head>
-<body onload="startquiz()">
-    <div class="main" >
-    <div class="main_container">
+<body onload="startquiz() , Startcounter()">
+    <div class="main"  id="gaib" >
+
+    <div class="main_container" >
+
         <!-- Header -->
         <div class="main_head">
             <div>
-                <span>Name : </span>
+                <span class="name">Name : </span>
                 <span id="fulName"></span>
                 <br />
-                <span>Email : </span>
+                <span class="email">Email : </span>
                 <span id="FulEmail">shahpervez9@gmail.com</span>
             </div>
-            <div>
-                <span>Time : </span>
-                <span>00:00</span>
+            <div class="time-box">
+                <span class="time">Time : </span>
+                <span id="counter">60</span>
             </div>
 
 
         </div>
-        <!-- <hr /> -->
+        <hr />
         <!-- Body -->
         <div class="main_body">
             <div id="Questions">
 
             </div>
-            <div >
-                <ol id="option">
-                    
+            <div class="main-options">
+                <div id="option">
 
-
-                </ol>
+                </div>
 
             </div>
 
         </div>
-        <!-- <hr /> -->
+        <br />
+        <hr />
         <!-- Footer -->
         <div class="main_Footer">
             <div>
                 <span  id="nowCount">1</span> / <span id="totalCount">7</span>
             </div>
-            <button onclick="Nxt()" class="button nxtbtn" >Next</button>
+            <button onclick="Nxt()" disabled id="next" class="Net">Next</button>
 
         </div>
 
     </div>
 </div>
+
+
+<div id="result" class="hid" class="main_result">
+    <div class="container_result">
+        <div >
+            <!-- <img src="./images/fail.png" id="resultImg" class="resultmg" alt=""> -->
+            <span id="showPassFail" class="result_text" >Pass</span>
+        </div>
+        <div class="percentage" > <span id="percentage" class="percentage">0</span>%</div>
+        <div>
+            <!-- <span id="showCorrectAns" class="all_result">0</span>/
+            <span id="totalCountResult" class="all_result">0</span> -->
+
+            <span id="showCorrectAns" class="all_result"></span>/
+            <span id="totalCountResult" class="all_result"></span>
+        </div>
+
+
+    <span id="showCorrectAns" class="all_result">0</span>/
+    <span id="showwrongAns" class="all_result">0</span>
+    <br />
+    
+    </div>  
+
+</div>
+
+
     
 </body>
 <script src="quiz.js"></script>
